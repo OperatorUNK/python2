@@ -21,6 +21,13 @@ pipeline {
                 }
             }
         }
+        stage('test') {
+            steps {
+                script {
+                   echo "************** Testing code *******************"
+                }
+            }
+        }
     }
 }
 
