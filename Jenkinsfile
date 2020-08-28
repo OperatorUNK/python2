@@ -15,7 +15,7 @@ pipeline {
                     //echo bat(returnStdout: true, script: 'choco install python -y')
                     echo "************** Run python v2 file *******************"
                     echo bat(returnStdout: true, script: 'cd C:\\jenkins\\workspace\\python_test\\Python2 && py -2 Hello_python2.py')
-                    echo bat(returnStdout: true, script: '${WORKSPACE}')
+                    echo "Workspace is ${WORKSPACE}"
                     
                     
                     
